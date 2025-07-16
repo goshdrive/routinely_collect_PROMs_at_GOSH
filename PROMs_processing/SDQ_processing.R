@@ -376,13 +376,7 @@ dt_full<-dt_clean %>%
   mutate(age_check=case_when(age_questionnaire>1&age_questionnaire<5&metric_age=="SDQ 2-4"~ "2-4", 
                              age_questionnaire>3&age_questionnaire<18& metric_age=="SDQ 4-17"~ "4-17", 
                              age_questionnaire>10&age_questionnaire<18&metric_age=="SDQ 11-17"~"11-17",
-                             TRUE~"wrong type")) %>% #some questionnaires have the wrong type 
-  left_join(dt_questionnaire %>% #add  scale scores for each of the questionnaires 
-              filter(type_score=="scale") %>%  
-              select(project_id, TakenInstant, type_score, , type_scale, Value, metric_age, type_report,date) %>% 
-              pivot_wider(id_cols= c(project_id, TakenInstant,date,metric_age, type_report), names_from=type_scale, values_from=Value)) %>% 
-  group_by(project_id,date) %>% 
-  mutate(number_questionnaires_with_same_date=n()) 
+                             TRUE~"wrong type"))  #some questionnaires have the wrong type 
 
 #Filter those with wrong type 
 dt_full<-dt_full %>% 
