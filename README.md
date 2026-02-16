@@ -6,7 +6,9 @@
 
 This study reports the different approaches in the collection, storage, access and usage of patient reported outcome measures (PROMs) data within a large UK Children’s Hospital (Great Ormond Street Hospital for Children NHS Foundation Trust), highlighting that there is great variability in the ability to identify, extract and process PROMs in the de-identified EHR data. 
 
-This repository reports the steps taken to process the PROMs data for further analyses.  
+This repository reports the steps taken to process the PROMs data to prepare the data for patient and questionnaire level analyses. 
+
+It also presents exploratory descrptive statistics and linkages with hospital activity. 
 
 #### Data Source 
 NHS REC approval (REC reference:21/LO/0646) and local governance approvals at GOSH (22PE04) were obtained to access routine de-identified EHR data via the GOSH Digital Research Environment (DRE). 
