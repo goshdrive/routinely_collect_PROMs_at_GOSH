@@ -26,7 +26,8 @@ The steps taken to process the PROMs data for further analyses were assessed. Th
 
 The [procesing folder](https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/tree/main/PROMs_processing) includes the processing scripts. The analysis folder includes script to determine patient demographics, linkages to hospital activity and group outcomes. 
 
-For the processing, the code follows the processing steps as outlined in the figure. 4 PROMs were identified in the  1 in smartdata, 3 in flowsheets and 1 in both smartdata and flowsheets. This was identified within Epic Caboodle by searching the short or long form of the PROM names. The PROMs includes Pediatric Quality of Life Inventory (PedsQL), Strenghts and Difficulties Questionnaire (SDQ), Hospital Anxiety and Depression Scale (HADS), Childhood Health Assessment Questionnaire (CHAQ) and Revised Anxiety Disorder Scale (RCADS). 
+#### Processing 
+The code follows the processing steps as outlined in the figure. 4 PROMs were identified in the  1 in smartdata, 3 in flowsheets and 1 in both smartdata and flowsheets. This was identified within Epic Caboodle by searching the short or long form of the PROM names. The PROMs includes Pediatric Quality of Life Inventory (PedsQL), Strenghts and Difficulties Questionnaire (SDQ), Hospital Anxiety and Depression Scale (HADS), Childhood Health Assessment Questionnaire (CHAQ) and Revised Anxiety Disorder Scale (RCADS). 
 
 Using the time and date columns, the order of the questionnaires were identified. Any duplicate records were removed and type of metric, reporting and version of questionnaires were also identified. 
 
@@ -35,6 +36,8 @@ Questionnaire IDs were created and assigned to the metrics so that CYP/Proxy rec
 This resulted in data sets that are usable at patient and questionnaire level. 
 
 Each PROM were processed individually. 
+
+#### Analysis 
 
 
 
