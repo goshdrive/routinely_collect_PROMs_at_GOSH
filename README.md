@@ -15,14 +15,25 @@ NHS REC approval (REC reference:21/LO/0646) and local governance approvals at GO
 
 Any observations that mentioned the name of the PROMs (from the list acquired from the Epic Team either in long or abbreviated form) in smart data or flowhsheets (data sets in Epic EHR at GOSH) and any patients with matching observations were included in the data extraction. emographic data were also extracted and linked for patients with identified PROMs from the de-identified EHR data. Due to governamnce processes the data is not available for publication. 
 
-### How does it work?  
-
-The Pediatric Quality of Life Inventory (PedsQL), The Revised Child Anxiety Depression Scale (RCADs), the Strength and Difficulties Questionnaire (SDQ), the Child Health Assessment Questionnaire (CHAQ) and the Hospital Anxiety Derpression Scale (HADs) were identified in the EHR data in the DRE. 
+### PROMs processing steps 
 
 The steps taken to process the PROMs data for further analyses were assessed. These steps are iterative but all are needed to succesfully process the data for further analyses. 
 
-<img width="1618" height="1143" alt="image" src="https://github.com/user-attachments/assets/88ef011d-3fe8-4964-95ca-92f75a9592c4" />
+![process_figure](https://github.com/user-attachments/assets/0dd8e2f2-5905-44ce-a6ee-3df3b66c96a7)
 
 Each code now presents these steps for the individual PROMs.
+
+### How does it work? 
+
+For the processing, the code follows the code follows the processing steps as outlined in the figure. 
+
+5 PROMs were identified in the smartdata and flowsheets within Epic Caboodle using the short or long form of the PROM names.
+
+Using the time and date columns, the order of the questionnaires were identified. Any duplicate records were removed and type of metric, reporting and version of questionnaires were also identified. 
+
+Questionnaire IDs and assigned to the metrics so that CYP/Proxy records can be identified. 
+
+This resulted in data sets that are usable at patient and questionnaire level. 
+
 
 
