@@ -33,11 +33,21 @@ Using the time and date columns, the order of the questionnaires were identified
 
 Questionnaire IDs were created and assigned to the metrics so that CYP/Proxy records can be identified. 
 
-This resulted in data sets that are usable at patient and questionnaire level. 
+This resulted in data sets that are usable at patient and questionnaire level. It also results in data dictionaries, consistent metric names and 
 
 Each PROM were processed individually. 
 
 #### Analysis 
+
+(descrptive.R)- This presents demographics of patients with PROMs data and how this compares with patients at GOSH. This includes age, gender, ethnicity and deprivation. 
+(link_hospital_activity.R) - This links PROMs data to hospital activity (outpatient encounters and hospital admissions) and identifies which teams are most likely to be using PROMs. This includes network analysis to present potential collaboration networks. 
+(patient_otutcomes.R) - This present the proportion of questionnaires with a valid score for all the different PROMs and visualises patient outcomes in different formats. 
+
+### Requirements 
+
+
+### Code Authors
+
 
 
 
