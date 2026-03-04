@@ -39,25 +39,25 @@ Each PROM were processed individually.
 
 #### Analysis 
 
-(descrptive.R)[https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/descriptive.R]- This presents demographics of patients with PROMs data and how this compares with patients at GOSH. This includes age, gender, ethnicity and deprivation. 
-(link_hospital_activity.R)[https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/link_hosp_activity.R] - This links PROMs data to hospital activity (outpatient encounters and hospital admissions) and identifies which teams are most likely to be using PROMs. This includes network analysis to present potential collaboration networks. 
-(patient_otutcomes.R)[https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/patient_outcomes.R] - This present the proportion of questionnaires with a valid score for all the different PROMs and visualises patient outcomes in different formats. 
+[descrptive.R](https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/descriptive.R)- This presents demographics of patients with PROMs data and how this compares with patients at GOSH. This includes age, gender, ethnicity and deprivation. 
+[link_hospital_activity.R](https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/link_hosp_activity.R) - This links PROMs data to hospital activity (outpatient encounters and hospital admissions) and identifies which teams are most likely to be using PROMs. This includes network analysis to present potential collaboration networks. 
+[patient_otutcomes.R](https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/patient_outcomes.R) - This present the proportion of questionnaires with a valid score for all the different PROMs and visualises patient outcomes in different formats. 
 
 ### Requirements 
 
 The following R packages (available on CRAN) are needed:
-- (here)[https://cran.r-project.org/web/packages/here/vignettes/here.html]
-- (tidyverse)[https://tidyverse.org/packages/]
-- (gtsummary)[https://cran.r-project.org/web/packages/gtsummary/index.html]
-- (janitor)[https://cran.r-project.org/web/packages/janitor/index.html]
-- (timeDate)[https://cran.r-project.org/web/packages/timeDate/index.html]
-- (igraph)[https://cran.r-project.org/web/packages/igraph/index.html]
-- (ggplot2)[https://ggplot2.tidyverse.org/]
-- (ggraph)[https://cran.r-project.org/web/packages/ggraph/index.html]
-- (boot)[https://cran.r-project.org/web/packages/boot/index.html]
-- (lubridate)[https://cran.r-project.org/web/packages/lubridate/vignettes/lubridate.html]
+- [here](https://cran.r-project.org/web/packages/here/vignettes/here.html)
+- [tidyverse](https://tidyverse.org/packages/)
+- [gtsummary](https://cran.r-project.org/web/packages/gtsummary/index.html)
+- [janitor](https://cran.r-project.org/web/packages/janitor/index.html)
+- [timeDate](https://cran.r-project.org/web/packages/timeDate/index.html)
+- [igraph](https://cran.r-project.org/web/packages/igraph/index.html)
+- [ggplot2](https://ggplot2.tidyverse.org/)
+- [ggraph](https://cran.r-project.org/web/packages/ggraph/index.html)
+- [boot](https://cran.r-project.org/web/packages/boot/index.html)
+- [lubridate](https://cran.r-project.org/web/packages/lubridate/vignettes/lubridate.html)
 
 ### Code Authors
 
-- Anne Alarilla - (LinkedIn)[https://www.linkedin.com/in/anne-alarilla-aa6b7a346/?skipRedirect=true] - (GitHub)[https://github.com/annealarilla]
+- Anne Alarilla - [LinkedI](https://www.linkedin.com/in/anne-alarilla-aa6b7a346/?skipRedirect=true) - [GitHub](https://github.com/annealarilla)
 
