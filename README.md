@@ -24,10 +24,10 @@ The steps taken to process the PROMs data for further analyses were assessed. Th
 
 ### How does it work? 
 
-The [procesing folder](https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/tree/main/PROMs_processing) includes the processing scripts. The analysis folder includes script to determine patient demographics, linkages to hospital activity and group outcomes. 
+The [procesing folder](https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/tree/main/PROMs_processing) includes the processing scripts. The [analysis folder](https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/tree/main/analysis) includes script to determine patient demographics, linkages to hospital activity and group outcomes. 
 
 #### Processing 
-The code follows the processing steps as outlined in the figure. 4 PROMs were identified in the  1 in smartdata, 3 in flowsheets and 1 in both smartdata and flowsheets. This was identified within Epic Caboodle by searching the short or long form of the PROM names. The PROMs includes Pediatric Quality of Life Inventory (PedsQL), Strenghts and Difficulties Questionnaire (SDQ), Hospital Anxiety and Depression Scale (HADS), Childhood Health Assessment Questionnaire (CHAQ) and Revised Anxiety Disorder Scale (RCADS). 
+The code follows the processing steps as outlined in the figure above. 4 PROMs were identified in the  1 in smartdata, 3 in flowsheets and 1 in both smartdata and flowsheets. This was identified within Epic Caboodle by searching the short or long form of the PROM names. The PROMs includes Pediatric Quality of Life Inventory (PedsQL), Strenghts and Difficulties Questionnaire (SDQ), Hospital Anxiety and Depression Scale (HADS), Childhood Health Assessment Questionnaire (CHAQ) and Revised Anxiety Disorder Scale (RCADS). 
 
 Using the time and date columns, the order of the questionnaires were identified. Any duplicate records were removed and type of metric, reporting and version of questionnaires were also identified. 
 
@@ -39,15 +39,25 @@ Each PROM were processed individually.
 
 #### Analysis 
 
-(descrptive.R)- This presents demographics of patients with PROMs data and how this compares with patients at GOSH. This includes age, gender, ethnicity and deprivation. 
-(link_hospital_activity.R) - This links PROMs data to hospital activity (outpatient encounters and hospital admissions) and identifies which teams are most likely to be using PROMs. This includes network analysis to present potential collaboration networks. 
-(patient_otutcomes.R) - This present the proportion of questionnaires with a valid score for all the different PROMs and visualises patient outcomes in different formats. 
+(descrptive.R)[https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/descriptive.R]- This presents demographics of patients with PROMs data and how this compares with patients at GOSH. This includes age, gender, ethnicity and deprivation. 
+(link_hospital_activity.R)[https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/link_hosp_activity.R] - This links PROMs data to hospital activity (outpatient encounters and hospital admissions) and identifies which teams are most likely to be using PROMs. This includes network analysis to present potential collaboration networks. 
+(patient_otutcomes.R)[https://github.com/goshdrive/routinely_collect_PROMs_at_GOSH/blob/main/analysis/patient_outcomes.R] - This present the proportion of questionnaires with a valid score for all the different PROMs and visualises patient outcomes in different formats. 
 
 ### Requirements 
 
+The following R packages (available on CRAN) are needed:
+- (here)[https://cran.r-project.org/web/packages/here/vignettes/here.html]
+- (tidyverse)[https://tidyverse.org/packages/]
+- (gtsummary)[https://cran.r-project.org/web/packages/gtsummary/index.html]
+- (janitor)[https://cran.r-project.org/web/packages/janitor/index.html]
+- (timeDate)[https://cran.r-project.org/web/packages/timeDate/index.html]
+- (igraph)[https://cran.r-project.org/web/packages/igraph/index.html]
+- (ggplot2)[https://ggplot2.tidyverse.org/]
+- (ggraph)[https://cran.r-project.org/web/packages/ggraph/index.html]
+- (boot)[https://cran.r-project.org/web/packages/boot/index.html]
+- (lubridate)[https://cran.r-project.org/web/packages/lubridate/vignettes/lubridate.html]
 
 ### Code Authors
 
-
-
+- Anne Alarilla - (LinkedIn)[https://www.linkedin.com/in/anne-alarilla-aa6b7a346/?skipRedirect=true] - (GitHub)[https://github.com/annealarilla]
 
