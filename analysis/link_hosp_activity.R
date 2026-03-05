@@ -338,22 +338,18 @@ hosp_admi_proms <- hosp_admi %>%
   mutate(date_out=ifelse(expected_discharge_datetime!="",expected_discharge_datetime,end_datetime)) %>% 
   mutate(date_out=as.Date(date_out)) %>% 
   mutate(los=date_out-date_in) %>% 
-  # Perform a cross join with df2 (merge by patient_id)
   inner_join(pats_proms, by = "project_id", relationship = "many-to-many") %>%
   rowwise() %>%
   mutate(
-    # Ensure `date` and `date_op` are Date objects
     date_in = as.Date(date_in),
     date_out = as.Date(date_out),
     date = as.Date(date),
-    
-    # Apply the rules
+
     rule = case_when(
       los >= 1  ~ date >= date_in & date <= date_out,
       los == 0 ~ date == date_in & date == date_out,
       TRUE     ~ FALSE) 
   ) %>%
-  # Filter rows where both rules are satisfied
   filter(rule) %>% 
   select(project_id, hospital_service:admission_type,monthyear:proms) %>% 
   mutate(obs_id=paste0(project_id,"_",proms,"_",date)) 
