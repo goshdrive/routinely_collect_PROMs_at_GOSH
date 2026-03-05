@@ -698,7 +698,7 @@ op_proms_all <- op_proms2 %>%
   filter(proms=="pedsql_sd") %>% 
   mutate(
     spect_name = ifelse(spect_name == "", "Unknown", spect_name),
-    appt_date  = as.Date(date_op)  # <-- REPLACE with your appointment date column if needed
+    appt_date  = as.Date(date_op)  
   ) %>%
   select(project_id, spect_name, appt_date) %>%  # <-- REPLACE patient_id if needed
   distinct()
@@ -793,12 +793,12 @@ p<-ggraph(graph, layout = "kk") +
     repel = TRUE, 
     na.rm=TRUE, 
     
-    point.padding = 0.2,      # space around the point when repelling
-    box.padding   = 0.3,      # space around the label box
-    segment.color = "grey40", # leader line color
-    segment.size  = 0.4,      # leader line thickness
-    segment.alpha = 0.8,      # leader line transparency
-    max.overlaps = Inf        # avoid dropping labels if needed
+    point.padding = 0.2,      
+    box.padding   = 0.3,      
+    segment.color = "grey40", 
+    segment.size  = 0.4,      
+    segment.alpha = 0.8,      
+    max.overlaps = Inf        
   ) +
   scale_fill_manual(values = c("Top 5" = "#D55E00", "All" = "#9E9E9E"),
                     name = "Volume of appointments") +
