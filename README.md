@@ -35,7 +35,7 @@ Questionnaire IDs were created and assigned to the metrics so that CYP/Proxy rec
 
 This resulted in data sets that are usable at patient and questionnaire level. It also results in data dictionaries, consistent metric names and 
 
-Each PROM were processed individually. 
+Each PROM was processed individually. 
 
 #### Analysis 
 
