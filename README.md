@@ -17,8 +17,8 @@ Any observations that mentioned the name of the PROMs (from the list acquired fr
 
 ### PROMs processing steps 
 
-The steps taken to process the PROMs data for further analyses were assessed. These steps are iterative but all are needed to succesfully process the data for further analyses. The processing of the PROMs resulted in standardisation of variable names, identification of metadata and the [data dictionary](https://goshdrive.github.io/routinely_collect_PROMs_at_GOSH/#overview)
-
+The steps taken to process the PROMs data for further analyses were assessed. These steps are iterative but all are needed to succesfully process the data for further analyses. The processing of the PROMs resulted in standardisation of variable names, identification of metadata and the [data dictionary](https://goshdrive.github.io/routinely_collect_PROMs_at_GOSH/#overview).
+,.
 ![process_figure](https://github.com/user-attachments/assets/0dd8e2f2-5905-44ce-a6ee-3df3b66c96a7)
 
 
